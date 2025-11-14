@@ -46,7 +46,7 @@ export default function page() {
         </Box>
       </Box>
       <Container>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between", mt: 4 }}>
           <Typography sx={{ color: "black", fontWeight: "bold" }} variant="h6">
             Brand New
           </Typography>

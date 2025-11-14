@@ -10,6 +10,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Image from "next/image";
 import ShopButton from "./ShopButton";
 import Link from "next/link";
+import { Button } from "@mui/material";
 
 function ResponsiveAppBar() {
   return (
@@ -22,10 +23,20 @@ function ResponsiveAppBar() {
             justifyContent: "space-between",
           }}
         >
-          <Image src="/navlogo.png" width={80} height={80} alt="navlogo" />
+          <Link href={"/"}>
+            <Image src="/navlogo.png" width={80} height={80} alt="navlogo" />
+          </Link>
           <Box
             sx={{ flexGrow: 0, display: "flex", alignItems: "center", gap: 2 }}
           >
+            <Button
+              component={Link}
+              href="/contact"
+              variant="outlined"
+              sx={{ color: "white" }}
+            >
+              Contact
+            </Button>
             <ShopButton />
 
             <Tooltip>
